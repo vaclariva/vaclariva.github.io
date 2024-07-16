@@ -1,4 +1,2 @@
-# SITUS WEB PORTOFOLIO PRIBADI 
-
-### NOTES 
-IF YOU WANT TO TAKE THIS SOURCE CODE GET MY LICENSE
+# vaclariva.github.io
+portovolio tentang saya Clariva.
