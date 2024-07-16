@@ -116,7 +116,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 10rem 7% 2rem;
+    padding: 10rem 12% 2rem;
 }
 
 .home {
@@ -850,6 +850,8 @@ span {
     flex-wrap: wrap;
     padding: 2rem 7%;
     background: var(--main-color);
+    width: 100%;
+    margin: 0;
 }
 
 .footer-text p {
