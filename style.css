@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-
+/* ============================ MAIN ============================ */
 * {
     margin: 0;
     padding: 0;
@@ -41,6 +41,8 @@ body {
     color: var(--text-color);
 }
 
+
+/* ============================ HEADER ============================ */
 .header {
     position: fixed;
     top: 0;
@@ -119,6 +121,8 @@ section {
     padding: 10rem 12% 2rem;
 }
 
+
+/* ============================ HOME ============================ */
 .home {
     display: flex;
     align-items: center;
@@ -300,6 +304,8 @@ span {
     color: var(--main-color);
 }
 
+
+/* ============================ ABOUT ============================ */
 .about {
     display: flex;
     justify-content: center;
@@ -330,6 +336,8 @@ span {
     margin: 2rem 0 3rem;
 }
 
+
+/* ============================ SERVICES ============================ */
 .services {
     min-height: auto;
     padding-bottom: 10rem;
@@ -384,14 +392,14 @@ span {
 }
 
 
-/* Center and size the section title */
+/* ============================ SKILL ============================ */
 .skills_section{
     min-height: 50vh;
 }
 
 .section__title {
     text-align: center;
-    font-size: 4.5rem; /* Adjust size as needed */
+    font-size: 4.5rem;
     margin-bottom: 1rem;
   }
   
@@ -403,7 +411,6 @@ span {
     color: #cf9c7e;
   }
   
-  /* Skills container and columns */
   .skills__container {
     display: flex;
     flex-wrap: wrap;
@@ -411,13 +418,12 @@ span {
   }
   
   .skills__column {
-    flex: 1 1 calc(50% - 2rem); /* Two columns with gap */
+    flex: 1 1 calc(50% - 2rem); 
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
   
-  /* Skills header and content */
   .skills__header {
     display: flex;
     justify-content: space-between;
@@ -434,8 +440,8 @@ span {
   }
   
   .skills__icon {
-    font-size: 2rem; /* Increase the size of the icon */
-    margin-right: rem; /* Add margin to the right of the icon */
+    font-size: 2rem; 
+    margin-right: rem; 
   }
   
   .skills__titles {
@@ -451,7 +457,7 @@ span {
     transition: transform 0.3s;
   }
   
-  /* Skills list */
+  
   .skills__list {
     display: none;
     padding: 0 1rem 1rem 1rem;
@@ -487,10 +493,9 @@ span {
   .skills__percentage {
     display: block;
     height: 100%;
-    background-color: #cf9c7e; /* Adjust color as needed */
+    background-color: #cf9c7e; 
   }
   
-  /* Example percentages */
   .skills__html { width: 90%; }
   .skills__css { width: 80%; }
   .skills__vue { width: 85%; }
@@ -503,8 +508,8 @@ span {
   .skills__api { width: 55%; }
   
   
-  /* Qualification container and tabs */
-  .qualification__container {
+/* ============================ QUALIFICATION ============================ */
+  /* .qualification__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -537,7 +542,6 @@ span {
     margin-right: 1rem;
   }
   
-  /* Qualification content */
   .qualification__sections {
     display: flex;
     flex-direction: column;
@@ -593,7 +597,7 @@ span {
     display: inline-block;
     width: 13px;
     height: 13px;
-    background-color: var(--main-color); /* Ganti dengan warna yang sesuai */
+    background-color: var(--main-color); 
     border-radius: 50%;
 }
 
@@ -601,11 +605,99 @@ span {
     display: block;
     width: 1px;
     height: 100%;
-    background-color: var(--main-color); /* Ganti dengan warna yang sesuai */
+    background-color: var(--main-color); 
     transform: translate(6px, -7px);
+} */
+
+
+.qualification__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.qualification__tabs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+  }
+  
+  .qualification__button {
+    font-size: 2rem;
+    font-weight: var(--font-medium);
+    cursor: pointer;
+  }
+  
+  .qualification__button:hover {
+    color: var(--first-color);
+  }
+  
+  .qualification__icon {
+    font-size: 1.8rem;
+    margin-right: var(--mb-0-25);
+  }
+  
+  .qualification__data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+    padding: 0 80px;
+  }
+  
+  .qualification__title {
+    font-size: 1.25rem;
+    font-weight: var(--font-medium);
+  }
+  
+  .qualification__subtitle {
+    display: inline-block;
+    font-size: 1rem;
+    margin-bottom: var(--mb-1);
+  }
+  
+  .qualification__calendar {
+    font-size: 1rem;
+    color: var(--text-color-light);
+  }
+  
+  .qualification__rounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  
+  .qualification__line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--first-color);
+    transform: translate(6px, -7px);
+    -webkit-transform: translate(6px, -7px);
+    -moz-transform: translate(6px, -7px);
+    -ms-transform: translate(6px, -7px);
+    -o-transform: translate(6px, -7px);
+  }
+  
+  .qualification [data-content] {
+    display: none;
+  }
+  
+  .qualification__active[data-content] {
+    display: block;
+  }
+  
+  .qualification__button.qualification__active {
+    color: var(--main-color);
+  }
 
+
+/* ============================ PROJECT ============================ */
 /* .project {
     min-height: auto;
     padding-bottom: 10rem;
@@ -758,6 +850,8 @@ span {
     background: var(--main-color);
 } */
 
+
+/* ============================ POP UP ============================ */
 .modal {
     display: none; /* Modal default hidden */
     position: fixed;
@@ -796,6 +890,7 @@ span {
   }
   
 
+  /* ============================ CONTACT ============================ */
 .contact {
     min-height: auto;
     padding-bottom: 7rem;
@@ -871,6 +966,8 @@ span {
     transition: .5s ease;
 }
 
+
+/* ============================ FOOTER ============================ */
 .footer-iconTop a:hover {
     outline-color: var(--white-color);
 }
@@ -881,7 +978,7 @@ span {
 }
 
 
-/* BREAKPOINTS */
+/* ============================ RESPONSIVE ============================ */
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
