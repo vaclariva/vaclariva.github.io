@@ -872,7 +872,11 @@ span {
     border: 1px solid #888;
     width: 80%; 
     max-width: 600px; 
-    border-radius: 10%;
+    border-radius: 5%;
+  }
+
+  .modal-body{
+    margin: 4px;
   }
   
   .close {
@@ -880,6 +884,7 @@ span {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    margin:
   }
   
   .close:hover,
