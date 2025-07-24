@@ -1,2 +1,2 @@
 # vaclariva.github.io
-portovolio tentang saya Clariva.
+portofolio tentang saya Clariva.
